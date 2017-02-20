@@ -1,3 +1,5 @@
+import {ImageboxEditableProperties} from "imagebox-editable";
+
 const ImageboxEditable = (function () {
 
         const imageboxSelector = '.imagebox-editable';
