@@ -20,7 +20,7 @@ const ImageboxEditable = (function () {
             const $imageBox = $(this).closest(imageboxSelector);
             let imageDropzone: Dropzone;
 
-            new HbsModal('image_upload_modal', {
+            new Modal('image_upload_modal', {
                 show: function (event, $modal) {
 
                     var $submitBtn = $modal.find('button[type="submit"]');
