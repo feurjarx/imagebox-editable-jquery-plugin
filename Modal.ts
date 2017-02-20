@@ -1,4 +1,4 @@
-interface HbsModalOptions {
+interface ModalOptions {
     params?: any;
     submit?: Function;
     show?: Function;
@@ -9,19 +9,20 @@ interface HbsModalOptions {
     draggable?: boolean;
 }
 
-class HbsModal {
+class Modal {
 
     private hbs: string;
 
     private $modal: JQuery = null;
 
     /**
-     * Constructor HbsModal
+     * Constructor 
+     
      *
      * @param hbs
      * @param options
      */
-    constructor(hbs: string, options?: HbsModalOptions) {
+    constructor(hbs: string, options?: ModalOptions) {
 
         this.hbs = hbs;
 
@@ -38,7 +39,7 @@ class HbsModal {
      * @param bsOptions
      * @returns {JQuery}
      */
-    public render = (options: HbsModalOptions, bsOptions?: any) => {
+    public render = (options: ModalOptions, bsOptions?: any) => {
 
         if (!this.$modal) {
 
